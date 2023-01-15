@@ -1,23 +1,20 @@
 {
-  "name": "spotipobre-api",
+  "name": "express-hello-world",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Express Hello World on Render",
+  "main": "app.js",
+  "repository": "https://github.com/render-examples/express-hello-world",
+  "author": "Render Developers",
+  "license": "MIT",
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eduardo-martiniano/spotipobre-api.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eduardo-martiniano/spotipobre-api/issues"
-  },
-  "homepage": "https://github.com/eduardo-martiniano/spotipobre-api#readme",
   "dependencies": {
     "express": "^4.18.2",
     "ytdl-core": "^4.11.2"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
