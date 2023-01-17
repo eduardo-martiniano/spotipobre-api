@@ -29,4 +29,17 @@ const downloadmp3 =
     }
 };
 
-module.exports = {downloadmp3}
+const validate = async (req, res, next) => {
+	try {
+		var url = req.query.url;
+        var valid = await ytdl.validateURL(url);
+        res.json({
+            valid: valid
+        });
+
+	} catch (err) {
+		console.error(err);
+	}
+};
+
+module.exports = {downloadmp3, validate}
